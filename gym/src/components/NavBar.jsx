@@ -9,7 +9,7 @@ const Navbar = () => {
                     <li className="p-2">Mission</li>
                     <li className="p-2">Careers</li>
                     <li className="p-2">Contract</li>
-                    <li className="p-2">S</li>
+                    <li className="p-2">Settings</li>
                 </ul>
             </div>
         </div>
