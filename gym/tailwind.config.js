@@ -9,7 +9,8 @@ module.exports = {
     },
     extend: {
       backgroundImage:{
-        'gym': "url('./images/gym.png')"   
+        'gym': "url('./images/gym.png')", 
+        'gym1': "url('./images/gym1.png')"  
          }
     },
   },
