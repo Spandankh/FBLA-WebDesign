@@ -1,6 +1,3 @@
-import React from "react";
-
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 
 const NavBar = () => {
@@ -16,7 +13,7 @@ const NavBar = () => {
                     <li className="p-2">Settings</li>
                 </ul>
             </div>
-            {/*MINIMZED NAV BAR */}
+            {/*RE */}
 
         </div>
     );
