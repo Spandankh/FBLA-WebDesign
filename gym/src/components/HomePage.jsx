@@ -4,7 +4,7 @@ import HomeText from './HomeText';
 import NavBar from './NavBar';
 const HomePage = () => {
     return (
-        <div className="bg-gym1 bg-cover bg-center h-screen">
+        <div className="bg-gym2 bg-cover bg-center h-scree m-auto">
             <NavBar /> 
             <HomeText/>
         </div>

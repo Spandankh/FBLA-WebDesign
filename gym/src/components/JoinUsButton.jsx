@@ -6,8 +6,8 @@ const JoinUsButton = () => {
             
     }
     return (
-        <div className="flex items-center">
-            <button type="button" className="bg-[#ea352a] text-white py-1 px-5 font-semibold uppercase tracking-wider shadow-md hover:bg-gray-800 transition duration-300" onClick={handleClick}>
+        <div className="">
+            <button type="button" className="border-4 border-red-500 text-white py-1.5 px-10 font-semibold uppercase tracking-wider shadow-md hover:bg-red-800 transition duration-300 rounded-full" onClick={handleClick}>
                 JOIN US!
             </button>
         </div>
