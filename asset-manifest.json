@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/FBLA-WebDesign/static/css/main.a5157440.css",
-    "main.js": "/FBLA-WebDesign/static/js/main.f18ddf1e.js",
-    "static/media/gym.png": "/FBLA-WebDesign/static/media/gym.1fb3d310bf2f70096eb9.png",
+    "main.css": "/FBLA-WebDesign/static/css/main.98cf0d2c.css",
+    "main.js": "/FBLA-WebDesign/static/js/main.ec243916.js",
     "static/media/gym.jpg": "/FBLA-WebDesign/static/media/gym.eaec001f82c1468de99c.jpg",
     "index.html": "/FBLA-WebDesign/index.html",
-    "main.a5157440.css.map": "/FBLA-WebDesign/static/css/main.a5157440.css.map",
-    "main.f18ddf1e.js.map": "/FBLA-WebDesign/static/js/main.f18ddf1e.js.map"
+    "main.98cf0d2c.css.map": "/FBLA-WebDesign/static/css/main.98cf0d2c.css.map",
+    "main.ec243916.js.map": "/FBLA-WebDesign/static/js/main.ec243916.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5157440.css",
-    "static/js/main.f18ddf1e.js"
+    "static/css/main.98cf0d2c.css",
+    "static/js/main.ec243916.js"
   ]
 }
