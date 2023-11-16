@@ -1,11 +1,32 @@
 import React from 'react'
-import HomePage from './components/HomePage';
+import HomePage from './Pages/HomePage';
+import Mission from './Pages/Mission';
+import NoPage from './Pages/NoPage';
+import NavBar from './components/homepage/NavBar';
+import Career from './Pages/Careers';
+import Footer from './components/Footer';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div>
-      <HomePage/>
-    </div>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route>
+            <Route index element={<HomePage />}/>
+            <Route path="/home" element={<HomePage />}/>
+            <Route path="/mission" element={<Mission />}/>
+            <Route path="/career" element={<Career />}/>
+            <Route path="/contract" element={<Career />}/>
+            <Route path="*" element={<NoPage />}/>
+          </Route>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </>
   );
 }
 
