@@ -11,7 +11,7 @@ const NavBar = () => {
         setNav(!nav)
     }
     return ( 
-        <div className="max-w-auto mx-auto px-4 py-.5 h-24 flex items-center justify-between text-white font-equinox-sans bg-black">
+        <div className="max-w-auto mx-auto px-4 py-.5 h-auto flex items-center justify-between text-white font-equinox-sans bg-black">
                 <h1 className="w-full text-3xl font-bold">WARIO</h1>
                 <ul className="hidden md:flex">
                     <Link className='p-4' to="/home">Home</Link>
