@@ -2,7 +2,7 @@
 const BoxStyle = ({ jobOpening }) => {
     return (
       <div className="w-full py-2 px-4 bg-[#f6f7fa] ">
-        <div className="max-w-[1240px] mx-auto grid md:grid-col-3 gap-10 bg-">
+        <div className="max-w-[1240px] mx-auto grid md:grid-col-3 gap-10">
           <div className="border-2 border-gray-600 w-full shadow-xl  outline-2 flex flex-col p-4 rounded-lg ">
             <h2 className="text-4xl font-bold text-left">{jobOpening.position}</h2>
             <h2 className="text-2xl text-left">{jobOpening.company}</h2>

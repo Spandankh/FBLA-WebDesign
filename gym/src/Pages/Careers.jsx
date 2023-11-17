@@ -1,6 +1,6 @@
 import React from "react";
 import BoxStyle from "../components/Careers/CareerBox";
-
+import SearchBar from "../components/Careers/CareerSearch";
 const Career = () => {
   const jobOpening = [{
     company:"Example Company",
@@ -48,8 +48,10 @@ const Career = () => {
 
   return (
     <div className="text-black font-equinox-sans bg-[#f6f7fa] bg-cover">
+        <SearchBar/>
         {jobOpening.map((company, index) =>(
             <BoxStyle key={index} jobOpening={company}/>
+            
         ))}
     </div>
   );
