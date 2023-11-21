@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { baseUrl } from "../config";
+
+// Import the CareerBox component if needed
+
+const Mission = () => {
+    const [jobOpenings, setJobOpening] = useState([]);
+    useEffect(() => {
+        const fetchJobOpenings = async () => {
+            const response = await fetch(`${baseUrl}/job`);
+            if (response.ok) {
+                const data = await response.json();
+                setJobOpening(data);
+            } else {
+                console.error("Failed to fetch job openings");
+            }
+        };
+
+        fetchJobOpenings();
+    }, []);
 
 
-const mission = () => {
-    const handleClick = () =>{}
-    return(
-     <div className="text-black font-equinox-sans ">
-        <div className="max-w-auto m-auto w-full h-screen text-center flex flex-col justify-center px-8 md:px-8">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold md:py-6 "> MISSION RANDOM TEXT TEXT TEXT TEXT</h1>
-        </div>
-     </div>   
-    )
-}
-export default mission
+    return (
+        <>
+                {jobOpenings.map((job) => (
+                    <p>{job.company}</p>
+                ))}
+        </>
+    );
+};
+
+export default Mission;
