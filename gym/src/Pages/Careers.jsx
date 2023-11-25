@@ -3,7 +3,6 @@ import BoxStyle from "../components/Careers/CareerBox";
 import SearchBar from "../components/Careers/CareerSearch";
 import { baseUrl } from "../config";
 
-
 const Career = () => {
   /* const jobOpening = [{
     company:"Example Company",
@@ -49,31 +48,30 @@ const Career = () => {
   },
 ]; */
 
-const [jobOpenings, setJobOpening] = useState([]);
+  const [jobOpenings, setJobOpening] = useState([]);
   useEffect(() => {
     const fetchJobOpenings = async () => {
-      try{
-          const response = await fetch(`${baseUrl}/job`);
-          if (response.ok) {
-              const data = await response.json();
-              setJobOpening(data);
-          } else {
-            throw new Error("Failed to fetch job openings");
-          }
-        } catch (error){
-          throw new Error("Failed to fetch job openings", error);
+      try {
+        const response = await fetch(`${baseUrl}/job`);
+        if (response.ok) {
+          const data = await response.json();
+          setJobOpening(data);
+        } else {
+          throw new Error("Failed to fetch job openings");
         }
+      } catch (error) {
+        throw new Error("Failed to fetch job openings", error);
+      }
     };
 
     fetchJobOpenings();
   }, []);
   return (
-    <div className="text-black font-equinox-sans bg-[#f6f7fa] bg-cover">
-        <SearchBar/>
-        {jobOpenings.map((company, index) =>(
-            <BoxStyle key={index} jobOpening={company}/>
-            
-        ))}
+    <div className="text-black font-equinox-sans bg-[#e6e6e5] bg-cover">
+      <SearchBar />
+      {jobOpenings.map((company, index) => (
+        <BoxStyle key={index} jobOpening={company} />
+      ))}
     </div>
   );
 };
